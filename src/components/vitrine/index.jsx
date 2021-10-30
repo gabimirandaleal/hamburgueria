@@ -6,7 +6,7 @@ function Vitrine({ produtos, carrinho, setCarrinho }) {
 
     function inserirCarrinho(itemASerInserido) {
         if ((carrinho.filter((item) => itemASerInserido.name === item.name)).length === 0) {
-            setCarrinho([...carrinho, { id: itemASerInserido.id, name: itemASerInserido.name, category: itemASerInserido.category, img: itemASerInserido.img, quantidade: 1, price: itemASerInserido.price }])
+            setCarrinho([...carrinho, itemASerInserido = { ...itemASerInserido, quantidade: 1 }])
         }
     }
 
