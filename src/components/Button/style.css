@@ -1,0 +1,17 @@
+.button-padrao{
+    background-color: #27AE60;
+    border: 0px;
+    width: 107px;
+    height: 40px;
+    border-radius: 8px;
+    color: #FFFFFF
+}
+
+.button-padrao:hover{
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+.width-maxima{
+    width: 100%;
+}

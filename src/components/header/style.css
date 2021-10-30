@@ -1,0 +1,80 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container-header{
+    background-color: #F5F5F5;
+}
+
+
+
+.title{
+    margin: 14.5px 0 13.9px 0;
+}
+
+.title-burguer{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.title-kenzie{
+    color: #E60000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-pesquisa{
+    padding: 10px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+
+.header-pesquisa input{
+    background-color: transparent;
+    border: 0px;
+    height: 35px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+.header-pesquisa input::placeholder{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E0E0E0;
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 21px;
+    }
+
+    .header-pesquisa{
+        min-width: 343px;
+        margin-bottom: 0px;
+    }
+
+    .container-header{
+        background-color: #F5F5F5;
+        padding: 0px 100px;
+    }
+    
+
+}

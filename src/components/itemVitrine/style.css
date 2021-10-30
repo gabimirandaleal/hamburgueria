@@ -1,0 +1,37 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E0E0E0;
+    border-radius: 5px;
+    min-width: 280px;
+    margin: 29px 10px 0px 0px;
+}
+
+.item-div-img{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.item-img{
+    width: 157px;
+}
+
+.item-detalhes{
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-detalhes h2{
+    margin-bottom: 30px;
+}
+
+.espacamento{
+    margin-bottom: 30px;
+}
+
+.itemVitrine-price{
+    color: #27AE60;
+    font-weight: bold;
+}

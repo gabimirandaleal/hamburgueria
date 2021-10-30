@@ -1,0 +1,19 @@
+.products{
+    display: flex;
+    overflow:scroll;
+    margin-left: 21px;
+    width: 100%;
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
