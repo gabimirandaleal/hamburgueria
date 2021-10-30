@@ -6,15 +6,18 @@ function ItemCarrinho({ carrinho, product, removerCarrinho, setCarrinho }) {
 
     function somar() {
         setQuantidade(quantidade + 1)
-        setCarrinho([...(carrinho.filter((item) => item !== product)), { id: product.id, name: product.name, category: product.category, img: product.img, quantidade: product.quantidade + 1, price: product.price }])
+        product.quantidade = product.quantidade + 1
+        carrinho[carrinho.indexOf(product)] = product
+        setCarrinho([...carrinho])
     }
     function sub() {
         if (quantidade > 1) {
             setQuantidade(quantidade - 1)
-            setCarrinho([...(carrinho.filter((item) => item !== product)), { id: product.id, name: product.name, category: product.category, img: product.img, quantidade: product.quantidade - 1, price: product.price }])
+            product.quantidade = product.quantidade - 1
+            carrinho[carrinho.indexOf(product)] = product
+            setCarrinho([...carrinho])
         }
     }
-
 
 
     return (
