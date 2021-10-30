@@ -5,10 +5,12 @@
     border-left: 2px solid #E0E0E0;
     border-right: 2px solid #E0E0E0;
     border-bottom: 2px solid #E0E0E0;
-    min-width: 312px;
-    
+    min-width: 300px;
 }
 
+.carrinho-container{
+    width: 100%;
+}
 
 
 .title-carrinho{

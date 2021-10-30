@@ -5,6 +5,8 @@
     background-color: #F5F5F5;
 }
 
+
+
 .container-item img{
     max-height: 90px;
     background-color: #ebe7e7;
@@ -16,6 +18,7 @@
 
 .container-item h2{
     margin: 0px 0px 5px 0px;
+    font-size: 20px;
 }
 
 .button-remove{
