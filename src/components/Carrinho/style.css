@@ -8,6 +8,10 @@
     min-width: 300px;
 }
 
+.carrinho-container{
+    overflow-x: scroll;
+}
+
 
 .title-carrinho{
     color: white;
@@ -53,5 +57,12 @@
 @media screen and (min-width: 1000px) {
     .carrinho{
         min-width: 365px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    .carrinho-container{
+        overflow-x: visible;
     }
 }
