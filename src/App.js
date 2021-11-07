@@ -7,7 +7,7 @@ import Carrinho from './components/Carrinho';
 
 function App() {
   
-  const [products] = useState([
+  const [products, setProduct] = useState([
     { id: 1, name: 'Hamburguer', category: 'Sanduíches', price: 14.00, img: 'https://i.ibb.co/fpVHnZL/hamburguer.png' },
     { id: 2, name: 'X-Burguer', category: 'Sanduíches', price: 16.00, img: 'https://i.ibb.co/djbw6LV/x-burgue.png' },
     { id: 3, name: 'Big Brocadão', category: 'Sanduíches', price: 18.00, img: 'https://i.ibb.co/FYBKCwn/big-kenzie.png' },
@@ -21,13 +21,11 @@ function App() {
 
   
 
-
-
   return (
     <div className="App">
         <Header produtos={products} setFilteredProducts={setFilteredProducts}></Header>
         <div className="container-menu">
-          <Vitrine carrinho={carrinho} setCarrinho={setCarrinho} produtos={filteredProducts.length===0?products:filteredProducts}></Vitrine>
+          <Vitrine carrinho={carrinho} setCarrinho={setCarrinho} produtos={filteredProducts.length===0?products:filteredProducts} setFilteredProducts={setFilteredProducts} ></Vitrine>
           <Carrinho carrinho={carrinho} setCarrinho={setCarrinho}/>
         </div>
         

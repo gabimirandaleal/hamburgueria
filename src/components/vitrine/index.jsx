@@ -2,12 +2,14 @@ import ItemVitrine from '../itemVitrine';
 import "./style.css"
 
 
-function Vitrine({ produtos, carrinho, setCarrinho }) {
+function Vitrine({ produtos, carrinho, setCarrinho, setFilteredProducts }) {
 
     function inserirCarrinho(itemASerInserido) {
         if ((carrinho.filter((item) => itemASerInserido.name === item.name)).length === 0) {
             setCarrinho([...carrinho, itemASerInserido = { ...itemASerInserido, quantidade: 1 }])
         }
+
+        setFilteredProducts([])
     }
 
     return (

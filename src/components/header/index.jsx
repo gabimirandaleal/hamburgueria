@@ -1,13 +1,22 @@
 import "./style.css"
 import Button from "../Button"
+import { useState } from "react"
 
 function Header({ produtos, setFilteredProducts }) {
+    const [input, setInput] = useState("")
+
+    function setar() {
+        setInput("")
+    }
 
     function filtrarProducts(text) {
+        setInput(text)
         setFilteredProducts(produtos.filter((item) => {
             return ((item.name).toLowerCase().indexOf(text.toLowerCase()) > -1 || (item.category).toLowerCase().indexOf(text.toLowerCase()) > -1) && item.name
         }));
     }
+
+
 
     return (
         <div className="container-header">
@@ -19,9 +28,10 @@ function Header({ produtos, setFilteredProducts }) {
                 <div className="header-pesquisa">
                     <input type="text"
                         placeholder="Digitar Pesquisa"
+                        value={input}
                         onChange={(event) => filtrarProducts(event.target.value)}
                     />
-                    <Button text="Pesquisar" />
+                    <Button onClick={setar} type="submit" text="Pesquisar" />
                 </div>
             </div>
         </div>
